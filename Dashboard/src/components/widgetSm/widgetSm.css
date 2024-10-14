@@ -1,0 +1,124 @@
+.widgetSm {
+    flex: 1;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.widgetSmTitle {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.widgetSmImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.widgetSmList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.widgetSmListItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.widgetSmUser {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.widgetSmUsername {
+    font-weight: 600;
+}
+
+.widgetSmUserTitle {
+    font-weight: 300;
+}
+
+.widgetSmButton {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 10px;
+    background-color: #eeeef7;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.widgetSmButton:hover {
+    background-color: #dcdcdc;
+}
+
+.widgetSmIcon {
+    font-size: 16px !important;
+    margin-right: 5px;
+}
+
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .widgetSm {
+        padding: 15px;
+        margin-right: 10px;
+    }
+
+    .widgetSmTitle {
+        font-size: 18px;
+    }
+
+    .widgetSmImg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .widgetSmButton {
+        padding: 6px 8px;
+    }
+
+    .widgetSmIcon {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .widgetSm {
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .widgetSmTitle {
+        font-size: 16px;
+    }
+
+    .widgetSmImg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .widgetSmListItem {
+        margin: 15px 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .widgetSmButton {
+        padding: 5px 7px;
+        font-size: 14px;
+    }
+}

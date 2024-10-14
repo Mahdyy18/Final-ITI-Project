@@ -1,0 +1,28 @@
+.productDetails {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    /* max-width: 900px; */
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 900px) {
+    .productDetails {
+        flex-wrap: wrap;
+    }
+}
+
+.productDetails h1{
+    color: #ff565b;
+    font-size: 32px;
+}
+
+.productDetails span{
+    font-size: 24px;
+}
+
+.productDetails p{
+    color: #777;
+}

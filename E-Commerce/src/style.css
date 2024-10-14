@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body.form{
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.4) url("../assets/background.png") no-repeat center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Login Form Styling */
+.container {
+  position: absolute;
+  max-width: 480px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 8px;
+  background: rgb(153 153 153);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container header {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  text-align: center;
+  color: #d05f63;
+}
+
+.container form {
+  margin-top: 30px;
+}
+
+form .field {
+  margin-bottom: 20px;
+}
+
+form .input-field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  color: white;
+}
+
+.input-field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 15px;
+  background: #ebebeb;
+  color: #000000c4;
+  border: 1.5px solid #e7e7e7;
+  font-weight: 400;
+}
+
+.invalid input {
+  border-color: #de4d53;
+}
+
+.input-field .show-hide {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000b1;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.field .error {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #ff0000;
+  font-size: 14px;
+  display: none;
+}
+
+.invalid .error {
+  display: flex;
+}
+
+.error .error-icon {
+  margin-right: 6px;
+  font-size: 15px;
+}
+
+.create-password .error {
+  align-items: flex-start;
+}
+
+.create-password .error-icon {
+  margin-top: 4px;
+}
+
+.button {
+  margin: 25px 0 6px;
+}
+
+form .links {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+form .links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+form .links a:hover {
+  text-decoration: underline;
+}
+
+form .links a:nth-child(2) {
+  color: #d05f63;
+  font-weight: 600;
+}
+
+form .links a:nth-child(2):hover {
+  text-decoration: underline;
+}
+
+.button input {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  background-color: #d05f63;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button input:hover {
+  background-color: #943337;
+  color: white;
+}
+
+.button input:active {
+  transform: scale(0.95);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .field input,
+  .links a,
+  .button input {
+    width: calc(100% - 20px);
+  }
+  .error-text {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 545px) {
+  .container {
+    left: 0%;
+  }
+}
+
+/* Sub-navigation Styling */
+.sub-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7555c;
+  padding: 15px;
+}
+
+.sub-nav .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.sub-nav .form .register {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-nav .form .register .sign-up {
+  margin-right: 25px;
+}
+
+.sub-nav .form .register .sign-up a,
+.sub-nav .form .register .login a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.sub-nav .form .register .sign-up a:hover,
+.sub-nav .form .register .login a:hover {
+  color: #3e3f41;
+}
+
+.sub-nav .icons-box {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.sub-nav .icons-box i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.sub-nav .icons-box i:hover {
+  color: #3e3f41d1;
+}
+.field {
+  margin-bottom: 20px; 
+}
+
+.user-type-label {
+  margin-right: 20px;
+}
+
+.password-toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px; /* Increase the size of the icon */
+  color: #3e3f41; /* Change the color to black */
+}
+
+
+.input-field {
+  position: relative; /* Add this to position the toggle icon */
+}
+
+
+/* .btn-logout {
+  background-color: #3e3f41 !important;
+} */

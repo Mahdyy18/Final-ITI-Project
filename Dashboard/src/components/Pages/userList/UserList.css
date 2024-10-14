@@ -1,0 +1,103 @@
+.userList {
+  flex: 4;
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+}
+
+.userListUser {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  justify-content: space-between;
+  padding: 10px 0; 
+  box-sizing: border-box; 
+}
+
+.userListImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.userListEdit {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #3bb077;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.userListDelete {
+  color: red;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.userListAction {
+  display: flex;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .userListUser {
+      padding: 8px 0; 
+  }
+
+  .userListEdit {
+      padding: 4px 8px; 
+  }
+
+  .userListImg {
+      width: 28px; 
+      height: 28px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .userList {
+      padding: 0 10px; 
+  }
+
+  .userListUser {
+      flex-direction: row; 
+      justify-content: space-between; 
+  }
+
+  .userListEdit {
+      padding: 3px 6px; 
+  }
+
+  .userListImg {
+      width: 24px; 
+      height: 24px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .userListUser {
+      flex-direction: column; 
+      align-items: flex-start; 
+      width: 100%; 
+  }
+
+  .userListEdit {
+      width: 100%;
+      margin: 5px 0;
+  }
+
+  .userListAction {
+      flex-direction: column; 
+      align-items: flex-start; 
+  }
+
+  .userListImg {
+      width: 20px; 
+      height: 20px;
+  }
+}
