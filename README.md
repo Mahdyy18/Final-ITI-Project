@@ -1,5 +1,5 @@
 # Designer_Website
-A ITI Web Development Project React
+An ITI Web Development Project React
 This document provides an overview of our project—a Furniture website designed for selling Furniture. We've crafted both the frontend Using React.
 
 # Project Overview
