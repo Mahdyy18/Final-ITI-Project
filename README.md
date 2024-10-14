@@ -14,7 +14,7 @@ Checkout Process: Guides users through a seamless checkout process, including pa
 Responsive Design: Ensures the website is accessible and functional across various devices and screen sizes.
   
 # Technologies Used
-1. Frontend:
+ Frontend:
  HTML/CSS/JavaScript/ReactJs/Materiual-UI: For building the user interface and interactivity.
 
 
